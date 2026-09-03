@@ -66,8 +66,9 @@ public class LoginPage {
 			dropdown.selectByVisibleText(role);
 		}
 	}
-	public void clickSignIn() {
+	public ConfirmationDialogPage clickSignIn() {
 		signInButton.click();
+		return new ConfirmationDialogPage(driver);
 	}
 	
 	public String getErrorMessage() {
